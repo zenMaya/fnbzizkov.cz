@@ -1,31 +1,3 @@
-@font-face {
-  font-family: Inter;
-  src: url(../font/Inter_28pt-Regular.ttf);
-  font-weight: 400;
-}
-@font-face {
-  font-family: Inter;
-  src: url(../font/Inter_28pt-Black.ttf);
-  font-weight: 900;
-}
-@font-face {
-  font-family: Inter;
-  src: url(../font/Inter_28pt-Bold.ttf);
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: Inter;
-  src: url(../font/Inter_28pt-SemiBold.ttf);
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: Inter;
-  src: url(../font/Inter_28pt-Light.ttf);
-  font-weight: 300;
-}
-
 /* Reset CSS */
 * {
   margin: 0;
@@ -34,10 +6,17 @@
   text-align: justify;
 }
 
+@media (prefers-color-scheme: dark) {
+  html {
+    filter: invert(1);
+  }
+}
+
 html,
 body {
+  background-color: #fff;
   height: 100%;
-  font-family: Inter, sans-serif;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 16px;
 }
 
