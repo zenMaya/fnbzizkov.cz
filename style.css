@@ -37,7 +37,14 @@
 }
 
 .banner {
+    border-radius: 1em;
+    border: 2px solid black;
+    padding: 1.5rem;
     margin-bottom: 1.5em;
+
+    & h2:last-child {
+        margin-bottom: 0;
+    }
 }
 
 html,
